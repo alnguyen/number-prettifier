@@ -34,6 +34,12 @@ describe('number.js', function() {
       assert.strictEqual(result, expected);
     });
 
+    it('should return "5.4K for 5432', function () {
+      const result = prettify(5432)
+      const expected = '5.4K'
+      assert.strictEqual(result, expected);
+    });
+
     it('should return unsupported if too high', function() {
       const result = prettify(1000000000000000)
       const expected = 'Number too high; unsupported'

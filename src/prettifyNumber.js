@@ -2,8 +2,10 @@ function prettify (number) {
   const integral = Number.parseInt(number);
   const digitCount = countDigits(integral);
 
-  if (digitCount < 7) {
+  if (digitCount < 4) {
     return `${number}`;
+  } else if (digitCount < 7) {
+    return `${truncateNumber(integral)}K`
   } else if (digitCount < 10) {
     return `${truncateNumber(integral)}M`
   } else if (digitCount < 13) {
