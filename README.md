@@ -4,6 +4,7 @@ Write tested code (in any OO language, such as C# or Java) that accepts a numeri
 The prettified version should include one number after the decimal when the truncated number is not an integer.
 It should prettify numbers greater than 6 digits and support millions, billions and trillions.
 
+```
 Examples:
    input: 1000000
    output: 1M
@@ -19,3 +20,4 @@ Examples:
 
    input: 9487634567534
    output: 9.5T
+```
