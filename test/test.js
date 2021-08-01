@@ -40,9 +40,9 @@ describe('number.js', function() {
       assert.strictEqual(result, expected);
     });
 
-    it('should return unsupported if too high', function() {
+    it('should return a stern disapproval', function() {
       const result = prettify(1000000000000000)
-      const expected = 'Number too high; unsupported'
+      const expected = '1ಠ_ಠ'
       assert.strictEqual(result, expected);
     });
   });

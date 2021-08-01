@@ -4,16 +4,24 @@ function prettify (number) {
 
   if (digitCount < 4) {
     return `${number}`;
-  } else if (digitCount < 7) {
-    return `${truncateNumber(integral)}K`
-  } else if (digitCount < 10) {
-    return `${truncateNumber(integral)}M`
-  } else if (digitCount < 13) {
-    return `${truncateNumber(integral)}B`
-  } else if (digitCount < 16) {
-    return `${truncateNumber(integral)}T`
   } else {
-    return "Number too high; unsupported"
+    return `${truncateNumber(integral)}${unit(digitCount)}`;
+  }
+}
+
+function unit(digitCount) {
+  if (digitCount < 4) {
+    return '';
+  } else if (digitCount < 7) {
+    return 'K';
+  } else if (digitCount < 10) {
+    return 'M';
+  } else if (digitCount < 13) {
+    return 'B';
+  } else if (digitCount < 16) {
+    return 'T';
+  } else {
+    return 'ಠ_ಠ';
   }
 }
 
