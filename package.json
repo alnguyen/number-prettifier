@@ -1,0 +1,14 @@
+{
+  "name": "number-prettifier",
+  "version": "1.0.0",
+  "description": "Program that accepts a numeric type and returns a truncated, \"prettified\" string version.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Alan Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^9.0.3"
+  }
+}
