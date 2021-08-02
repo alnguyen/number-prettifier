@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const { countDigits, prettify, truncateNumber } = require('../src/prettifyNumber.js')
+const { countDigits, prettify, truncateNumber } = require('../src/prettifyNumber')
 
 describe('number.js', function() {
   describe('prettify', function() {

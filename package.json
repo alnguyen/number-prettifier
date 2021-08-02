@@ -4,7 +4,8 @@
   "description": "Program that accepts a numeric type and returns a truncated, \"prettified\" string version.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node index.js"
   },
   "author": "Alan Nguyen",
   "license": "ISC",

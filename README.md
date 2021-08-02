@@ -1,4 +1,4 @@
-Code Exercise - Write a number prettifier:
+# Code Exercise - Write a number prettifier:
 
 Write tested code (in any OO language, such as C# or Java) that accepts a numeric type and returns a truncated, "prettified" string version.
 The prettified version should include one number after the decimal when the truncated number is not an integer.
@@ -21,3 +21,11 @@ Examples:
    input: 9487634567534
    output: 9.5T
 ```
+
+## Usage
+
+Run the script: `yarn start`
+
+## Tests
+
+Run tests: `yarn test`
